@@ -3,15 +3,23 @@ var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; /
 var maleNames = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]; //ARRAY OF MALE AKAN NAMES
 
 
+/*Date MANIPULATION VARIABLES*/
 var dateInput = prompt("Enter date of birth: ");
-console.log(dateInput)
-
 var birthDate = new Date(dateInput) //uses the variable dateinput from the user prompt to create a calender date
-console.log(birthDate)
-
 var sikuKamili = birthDate.getDay();
-console.log(sikuKamili);
 
+/*USING THE DATES TO ACCESS THE NAME LISTS*/
 var genderFemale = femaleNames[sikuKamili];
 var genderMale = maleNames[sikuKamili];
-console.log(genderMale, genderFemale);
+
+var jinsia = prompt("Enter the gender: ").toLowerCase();  //takes the user input and converts it to upper case
+
+if (jinsia === "m"){
+    alert("Your Akan name is " +genderMale);
+}
+else{
+    alert("Your Akan name is " +genderFemale);
+}
+
+
+//console.log(jinsia);
