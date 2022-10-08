@@ -4,22 +4,30 @@ var maleNames = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]; //AR
 
 
 /*Date MANIPULATION VARIABLES*/
-var dateInput = prompt("Enter date of birth: ");
+var dateInput = prompt("Enter date of birth: (YYYY-MM-DD)");
 var birthDate = new Date(dateInput) //uses the variable dateinput from the user prompt to create a calender date
 var sikuKamili = birthDate.getDay();
+var month = birthDate.getMonth()
+var month = birthDate.getDate()
+
 
 /*USING THE DATES TO ACCESS THE NAME LISTS*/
 var genderFemale = femaleNames[sikuKamili];
 var genderMale = maleNames[sikuKamili];
 
-var jinsia = prompt("Enter the gender: ").toLowerCase();  //takes the user input and converts it to upper case
+var jinsia = prompt("Enter the gender: (M/F)").toLowerCase();  //takes the user input and converts it to upper case
+if (jinsia === "m"){ alert("Your Akan name is " +genderMale);}
+else{alert("Your Akan name is " +genderFemale);}
 
-if (jinsia === "m"){
-    alert("Your Akan name is " +genderMale);
+if (jinsia === "M" || jinsia === "F" || jinsia === "MALE" || jinsia === "FEMALE") {
+    alert ("Twende kazi")
 }
 else{
-    alert("Your Akan name is " +genderFemale);
+    alert("Sema kimeumana")
 }
 
+// var x = new Date("2022-13-98")
+// console.log(x)
+// typeof(x)
 
 //console.log(jinsia);
