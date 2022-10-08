@@ -36,12 +36,12 @@ if (
     birthYear <= 2100
 ) {
     if (
-        jinsia === "m" ||
-        jinsia === "m" ||
-        jinsia === "MALE" ||
-        jinsia === "FEMALE"
+        jinsia !== "m" ||
+        jinsia !== "m" ||
+        jinsia !== "MALE" ||
+        jinsia !== "FEMALE"
     ) {
-        alert("Twende kazi");
+        alert("Your Akan Name is" +gendMale);
     } else {
         alert("Sema kimeumana");
     }
