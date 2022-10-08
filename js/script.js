@@ -27,7 +27,8 @@ var jinsia = prompt("Enter the gender: (M/F)").toLowerCase(); //takes the user i
 
 if (jinsia === "m") {
   alert("Your Akan name is " + genderMale);
-} else {
+} 
+else {
   alert("Your Akan name is " + genderFemale);
 }
 
@@ -38,7 +39,8 @@ if (
   jinsia === "FEMALE"
 ) {
   alert("Twende kazi");
-} else {
+} 
+else {
   alert("Sema kimeumana");
 }
 
@@ -46,16 +48,11 @@ var x = new Date("");
 console.log(x);
 // typeof(x)
 
-if (
-  sikuKamili >= 0 &&
-  sikuKamili <= 6 &&
-  birthMonth >= 0 &&
-  birthMonth <= 11 &&
-  birthYear >= 1900 &&
-  birthYear <= 2100
-) {
+if (sikuKamili >= 0 && sikuKamili <= 7 && birthMonth >= 0 && birthMonth <= 12 && birthYear >= 1900 &&
+  birthYear <= 2100) {
   alert("Correct date .. onto next");
-} else {
+} 
+else {
   alert("Wrong date format, please check");
 }
 
