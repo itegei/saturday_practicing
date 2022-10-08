@@ -36,15 +36,14 @@ if (
     birthYear <= 2100
 ) {
     if (
-        jinsia !== "m" ||
-        jinsia !== "m" ||
-        jinsia !== "MALE" ||
-        jinsia !== "FEMALE"
-    ) {
-        alert("Your Akan Name is" +gendMale);
+        jinsia !== "m" || jinsia !== "f" || jinsia !== "MALE" || jinsia !== "FEMALE")
+    {
+       alert("Your Akan Name is " +genderMale); 
+       
     } else {
-        alert("Sema kimeumana");
+       alert("Sema kimeumana");
     }
-} else {
+}   
+    else {
     alert("Wrong date format, please check");
 }
