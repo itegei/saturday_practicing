@@ -1,3 +1,4 @@
+function akanNames (){
 //OUR WORKING LISTS
 var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",]; // WE DECLARE AND INITIALISE AN ARRAY WITH THE DAYS OF THE WEEK STARTING FROM SUNDAY TO MONDAY
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; //ARRAY OF FEMALE AKAN NAMES
@@ -37,4 +38,6 @@ if (sikuKamili >= 0 && sikuKamili <= 7 && birthMonth >= 0 && birthMonth <= 12 &&
 }
 else {
     alert("Wrong date format, please reenter as YYYY-MM-DD. i.e 2022-10-30");
+}
+
 }
