@@ -26,10 +26,12 @@ if (sikuKamili >= 0 && sikuKamili <= 7 && birthMonth >= 0 && birthMonth <= 12 &&
     if (jinsia === "m" || jinsia === "f" || jinsia === "MALE" || jinsia === "FEMALE") 
     {
         if (jinsia ==="m"){
-            alert("Your Akan Name is " +genderMale); 
+            document.getElementById("myFeedback").innerHTML = "Your Akan Name is " +genderMale
+            // alert("Your Akan Name is " +genderMale); 
         }
         else {
-            alert("Your Akan Name is " +genderFemale); 
+            document.getElementById("myFeedback").innerHTML = "Your Akan Name is " +genderFemale
+            // alert("Your Akan Name is " +genderFemale); 
         }  
     } 
     else {
