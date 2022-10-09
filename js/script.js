@@ -5,7 +5,7 @@ var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
 //USER PROMPTS
 var dateInput = prompt("Enter date of birth: (YYYY-MM-DD)");
-var jinsia = prompt("Enter the gender: (M/F)").toLowerCase(); //takes the user input and converts it to upper case
+
 
 /*DATE MANIPULATION VARIABLES*/
 var birthDate = new Date(dateInput); //uses the variable dateinput from the user prompt to create a calender date
@@ -19,23 +19,22 @@ var genderMale = maleNames[sikuKamili];
 
 //console.log(sikuKamili, birthMonth, birthYear);
 
-if (
-    sikuKamili >= 0 &&
-    sikuKamili <= 7 &&
-    birthMonth >= 0 &&
-    birthMonth <= 12 &&
-    birthYear >= 1900 &&
-    birthYear <= 2100
-) {
-    if (
-        jinsia !== "m" || jinsia !== "f" || jinsia !== "MALE" || jinsia !== "FEMALE")
+if (sikuKamili >= 0 && sikuKamili <= 7 && birthMonth >= 0 && birthMonth <= 12 && birthYear >= 1900 && birthYear <= 2100) 
+{
+    var jinsia = prompt("Enter the gender: (M/F)").toLowerCase(); //takes the user input and converts it to upper case
+    if (jinsia === "m" || jinsia === "f" || jinsia === "MALE" || jinsia === "FEMALE") 
     {
-       alert("Your Akan Name is " +genderMale); 
-       
-    } else {
+        if (jinsia ==="m"){
+            alert("Your Akan Name is " +genderMale); 
+        }
+        else {
+            alert("Your Akan Name is " +genderFemale); 
+        }  
+    } 
+    else {
        alert("Sema kimeumana");
     }
-}   
-//     else {
-//     alert("Wrong date format, please check");
-// }
+}
+else {
+    alert("Wrong date format, please reenter as YYYY-MM-DD. i.e 2022-10-30");
+}
